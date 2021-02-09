@@ -47,17 +47,19 @@ main {
     }
     }
   }
-    @media screen and (max-width: 768px) {
       .section-box {
-        margin: 20px 0;
-        text-align: center;
+              text-align: center;
 
         .container {
           display: flex;
+          margin: 0 15px;
           flex-direction: column;
-          padding: 0 15px;
           text-align: center;
           align-items: center;
+
+          .box {
+            width: 70%;
+          }
         }
       }
     }
