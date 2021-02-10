@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800;900&display=swap');
+@import "./variables";
+@import "./header";
+@import "./main";
+@import "./footer";
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $primary_color;
+  background: url(./images/bg-left.png) no-repeat,
+                    url("./images/bg-right.png") no-repeat,
+                    url("./images/bg-body.png") space round ;
+  background-size: 100px, 400px, 500px;
+  background-position: top 150px left -50px, right -200px top 250px, top 200px right -200px ;
+
+  @media screen and (max-width: 768px){
+    background-size: 100px, 200px, 500px;
+    background-position: top 150px left -50px, right -100px top 350px, top 200px right -200px ;
+
+
+  }
+
+}
